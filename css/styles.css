@@ -2,7 +2,127 @@
 
 html{
     box-sizing: border-box;
-    font-family: Tahoma, Geneva, sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    color: #3b3b42;
+    font-size: 1.25rem;
 }
 
+body {
+    margin: 0;
+    text-align: center;
+}
 
+img{
+    display: block;
+    max-width: 100%;
+}
+
+section {
+    padding: 3rem 1rem;
+}
+
+/* Typography */
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+h2, h3 {
+    font-family: 'Barriecito', cursive;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p{
+    margin-bottom: 0.85rem;
+}
+
+.section-title-small {
+    font-size: 2.25rem;
+}
+
+.section-title-small small {
+    font-size: 0.7rem;
+    line-height: 0.7;
+}
+
+.text-primary {
+    color: #00B41F;
+}
+
+.logo {
+    font-family: 'Barriecito', cursive;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #00B41F;
+}
+
+/* Navigation */
+
+header {
+    padding: 1rem 0 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+nav a{
+    display: inline-block;
+    padding: 0.5rem;
+    color: #00B41F;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #027F90;
+    text-decoration: underline;
+}
+
+/* Homepage Styles */
+
+.hero {
+    background-color: #333;
+    background-image: url(../images/main_image.jpg);
+    background-blend-mode: multiply;
+    text-align: center;
+    color: white;
+    padding: 15vh 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.about-us {
+    background: #027F90;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 0;
+}
+
+.about-us-intro{
+    background-color: #027F90;
+    background-image: url(../images/about_image.jpg);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 1rem 1rem;
+}
+
+.about-us-body {
+    padding: 1rem 1rem 3rem;
+}
