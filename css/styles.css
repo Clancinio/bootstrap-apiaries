@@ -19,8 +19,12 @@ img{
 
 section {
     padding: 3rem 1rem;
+    font-weight: bold;
 }
 
+.mb-0 {
+    margin-bottom: 0;
+}
 /* Typography */
 h1, h2, h3, h4, p {
     margin: 0;
@@ -34,6 +38,10 @@ h2, h3 {
 
 h2 {
     font-size: 3rem;
+}
+
+h3 {
+    padding: 1rem 0;
 }
 
 p{
@@ -64,6 +72,37 @@ p{
     color: #00B41F;
 }
 
+/* Buttons */ 
+.button-group{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.button{
+    padding: .75rem 2.5rem;
+    color:white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+.button-primary{
+    background-color: #00B41F;
+}
+
+.button-primary:hover,
+.button-primary:focus{
+    background-color: #007014;
+}
+
+.button-accent{
+    background-color: #027F90;
+}
+
+.button-accent:hover,
+.button-accent:focus{
+    background-color: #014F59;
+}
 /* Navigation */
 
 header {
@@ -125,4 +164,75 @@ nav a:focus {
 
 .about-us-body {
     padding: 1rem 1rem 3rem;
+}
+
+.order-online{
+    background-color: #f3f3f3;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+.product{
+   /* background-color: #f0f0f0; */
+    padding: 1rem;
+    border-radius: 0.35rem;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    margin-bottom: .75rem;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+}
+
+.product p{
+    padding-top: 0.75rem;
+}
+
+/***** FOOTER ******/
+footer {
+    background: #014F59;
+    padding: 3rem 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.footer-nav{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-nav a {
+    color: inherit;
+}
+
+.footer-nav li {
+    padding:0.2rem;
+}
+
+.footer-nav a {
+    margin: 10px;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    list-style: none;
+}
+
+.social-icon {
+    width: 50px;
+    padding: 0.2rem;
+}
+
+.social-link {
+    display: inline-block;
+    margin-bottom: 5px;
 }
