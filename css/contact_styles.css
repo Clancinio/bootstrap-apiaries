@@ -1,6 +1,3 @@
-body {
-    background-color: #f3f3f3;
-}
 
 *,
 *:after,
@@ -46,9 +43,19 @@ select:focus {
 
 
 /* Contact Form Styling */
+.text-primary {
+	margin: 0;
+	padding: 3rem 0;
+}
 
 .container {
     padding: 0 50px 70px;
+	background-color: #f3f3f3;
+}
+
+form {
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 .textcenter {
@@ -167,5 +174,3 @@ select:focus {
         font-size: 2.25rem;
     }
 }
-
-@media only screen and (max-width: 420px) {}

@@ -17,6 +17,11 @@ img {
     max-width: 100%;
 }
 
+.bee-img {
+    width: 50px;
+    height: auto;
+}
+
 section {
     padding: 3rem 1rem;
     font-weight: bold;
@@ -80,6 +85,7 @@ p:last-child {
 .logo {
     font-family: 'Barriecito', cursive;
     text-align: center;
+    font-size: 2rem;
     padding: 2rem 0;
 }
 
@@ -129,6 +135,7 @@ p:last-child {
 nav {
     background-color: #027F90;
     padding: 0.75rem 0;
+    text-align: right;
 }
 
 nav ul {
@@ -137,11 +144,11 @@ nav ul {
 }
 
 nav ul {
-    display: flex;
     list-style: none;
     margin: 0 auto;
     padding: 0;
     justify-content: space-around;
+    display: none;
 }
 
 nav a {
@@ -155,6 +162,45 @@ nav a:hover,
 nav a:focus {
     color: white;
     text-decoration: underline;
+}
+
+#burger {
+    margin-right: 1.5rem;
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #027F90;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    text-decoration: underline;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 2rem;
+    margin-left: 50px;
 }
 
 
@@ -236,7 +282,7 @@ footer {
     color: white;
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 0;
 }
 
 .footer-nav {
@@ -279,9 +325,19 @@ footer {
 /***** Media Queries ******/
 
 @media only screen and (min-width: 750px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+    #burger {
+        display: none;
+    }
     .section-title {
         width: 80%;
         margin: 0 auto;
+    }
+    .logo {
+        font-size: 3rem;
     }
     .intro h2 {
         width: 80%;
@@ -293,7 +349,7 @@ footer {
     .button-group {
         flex-direction: row;
         justify-content: center;
-        margin-top: 2rem;
+        margin-top: 0.25rem;
     }
     .button+.button {
         margin-left: 0.5rem;
@@ -335,10 +391,16 @@ footer {
         flex-direction: row;
         max-width: 1000px;
     }
+    .product-showcase>p {
+        margin-top: 1.5rem;
+    }
     .product:last-of-type {
         margin-bottom: 0.75rem;
     }
     .product+.product {
         margin-left: 1rem;
+    }
+    .footer-nav:first-of-type {
+        margin-right: 3rem;
     }
 }
