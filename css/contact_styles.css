@@ -1,7 +1,4 @@
-
-*,
-*:after,
-*:before {
+* {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -9,14 +6,11 @@
     box-sizing: border-box;
 }
 
-.clearfix:before,
-.clearfix:after {
-    display: table;
-    content: '';
+h2 {
+	margin-top: 60px;
 }
-
-.clearfix:after {
-    clear: both;
+h4 {
+	margin-bottom: 15px;
 }
 
 input:focus,
@@ -26,151 +20,45 @@ select:focus {
     outline: none;
 }
 
-::-moz-placeholder {
-    color: #666;
-    font-weight: 300;
-    opacity: 1;
-}
-
-::-webkit-input-placeholder {
-    color: #666;
-    font-weight: 300;
-}
-
-.margin-tb {
-    margin: 50px 0;
-}
-
-
-/* Contact Form Styling */
-.text-primary {
-	margin: 0;
-	padding: 3rem 0;
-}
-
-.container {
-    padding: 0 50px 70px;
-	background-color: #f3f3f3;
-}
-
 form {
-	max-width: 1000px;
+	padding: 1.5rem;
+	text-align: left;
+		max-width: 550px;
 	margin: 0 auto;
 }
+.form-row {
+	display: flex;
+	flex-direction: column;
 
-.textcenter {
-    text-align: center;
 }
 
-.section2 header {
-    margin: 40px 0;
+label {
+	font-weight: bold;
+	margin-bottom: 5px;
 }
 
-.section2 {
-    width: 100%;
-    margin: 25px auto;
-    text-align: center;
-    padding-top: 0;
+input,
+textarea { 
+	margin-bottom: 15px;
+	border: 1.5px lightgray solid;
+	padding: 10px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 0.75rem;
 }
 
-.sec2contactform {
-    margin: 0 auto;
-    width: 80%;
+input:focus,
+textarea:focus { 
+	border: 1.5px gray solid;
 }
 
-.sec2frmtitle {
-    margin-top: 3rem;
-    color: #027F90;
+textarea {
+	height: 100px;
 }
 
-.section2 .col2 {
-    width: 48.71%;
+.button-group {
+	justify-content: start;
+}
+.button {
+	text-align: center;
 }
 
-.section2 .col2.column2 {
-    padding: 0 30px;
-}
-
-.section2 span.collig {
-    color: #a2a2a2;
-    margin-right: 10px;
-    display: inline-block;
-}
-
-.section2 .sec2addr {
-    display: block;
-    line-height: 26px;
-}
-
-.section2 .sec2addr p:first-child {
-    margin-bottom: 10px;
-}
-
-.section2 .sec2contactform input[type="text"],
-.section2 .sec2contactform input[type="email"],
-.section2 .sec2contactform textarea {
-    padding: 18px;
-    border: 0;
-    background: white;
-    margin: 7px auto;
-}
-
-.section2 .sec2contactform textarea {
-    width: 98%;
-    display: block;
-    color: #666;
-    resize: none;
-}
-
-
-/* TABLE */
-
-
-/* @media querries */
-
-@media only screen and (max-width: 1266px) {
-    .section2 {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 960px) {
-    .container {
-        padding: 0 30px 70px;
-    }
-    .section2 .col2 {
-        width: 100%;
-        display: block;
-    }
-    .section2 .col2.first {
-        margin-bottom: 10px;
-    }
-    .section2 .col2.column2 {
-        padding: 0;
-    }
-    .section2 .sec2contactform textarea {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .section2 .sec2addr {
-        font-size: 14px;
-    }
-    .section2 .sec2contactform h3 {
-        font-size: 16px;
-    }
-    .section2 .sec2contactform input[type="text"],
-    .section2 .sec2contactform input[type="email"],
-    .section2 .sec2contactform textarea {
-        padding: 10px;
-        margin: 3px 0;
-    }
-    .section2 .sec2contactform input[type="submit"] {
-        padding: 10px 30px;
-        font-size: 14px;
-    }
-    header h2 {
-        font-size: 2.25rem;
-    }
-}

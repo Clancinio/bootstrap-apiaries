@@ -16,16 +16,32 @@
 
 <body>
     <header>
-        <h1 class="logo"><a href="index.html">Bootstrap Apiaries</a></h1>
         <nav>
+            <span class="open-slide">
+                        <a id="burger" href="#" onclick="openSideMenu()">
+                                <svg width="30" height="30">
+                                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                                    </svg>
+                        </a>
+                    </span>
+            <h1>Bootstrap Apiaries</h1>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li> <a href="">About</a></li>
+                <li> <a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="#">Products</a></li>
             </ul>
         </nav>
 
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+            <a href="#">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="products.html">Products</a>
+        </div>
     </header>
     <!-- end header -->
     <main>
@@ -87,9 +103,9 @@
                     </div>
                 </div>
             </div>
-            <p class="mb-0 ">Contact for more details on ordering:</p>
+            <p class="mb-0 ">Have a question about our products? Send us a message:</p>
             <div class="button-group">
-                <a href="" class="butt-learn button button-accent">Contact</a>
+                <a href="" class="butt-learn button button-accent">Get in touch</a>
             </div>
         </section>
     </main>
@@ -104,21 +120,15 @@
 
         </ul>
 
-        <ul class="footer-social">
-            <li>
-                <li>
-                    <a class="social-link" href=""><img class="social-icon" src="images/fb-icon.png"></a>
-                </li>
-                <li>
-                    <a class="social-link" href=""><img class="social-icon" src="images/fb-icon.png"></a>
-                </li>
-                <li>
-                    <a href=""><img src=""></a>
-                </li>
-            </li>
+        <ul class="footer-nav">
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Message</a></li>
         </ul>
 
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

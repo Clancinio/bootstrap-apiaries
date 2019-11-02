@@ -8,67 +8,91 @@
     <title>Document</title>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/contact_styles.css">
-
+    <link rel="stylesheet" href="css/contact_styles.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Barriecito|Quicksand&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1 class="logo"><a href="index.html">Bootstrap Apiaries</a></h1>
+
         <nav>
+            <span class="open-slide">
+                        <a id="burger" href="#" onclick="openSideMenu()">
+                                <svg width="30" height="30">
+                                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                                    </svg>
+                        </a>
+                    </span>
+            <h1>Bootstrap Apiaries</h1>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li> <a href="">About</a></li>
+                <li> <a href="about.html">About</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="products.html">Products</a></li>
             </ul>
         </nav>
 
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+            <a href="#">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="products.html">Products</a>
+        </div>
+
     </header>
     <!-- end header -->
 
-    <div class="innerwrap">
+    <div class="innerwrap"></div>
 
-        <section class="hero">
-            <h2 class="section-title">Contact us</h2>
-        </section>
-
-
-        <div class="container">
-		        <header>
+    <div class="container">
+        <header>
             <h2 class="text-primary margin-tb">Get in touch</h2>
         </header>
-            <section class="section2">
+       
 
-                <div class="">
-                    <div class="sec2innercont">
-                        <div class="sec2addr">
-                            <p>45 BC, a Latin professor at Hampden-Sydney College in Virginia</p>
-                            <p><span class="collig">Phone :</span> +91 976885083</p>
-                            <p><span class="collig">Email :</span> vivek.mengu016@gmail.com</p>
-                            <p><span class="collig">Fax :</span> +91 9768850839</p>
+            <form action="" method="post">
+
+                <div class="field-container">
+                    <!-- End col-left -->
+                    <div class="col-right">
+
+                        <p>Required fields are followed by *.</p>
+
+                        <div class="form-row">
+                            <label for="fName">First Name* :</label>
+                            <input type="text" id="fName" name="fName" required>
                         </div>
-                    </div>
-                    <div class="sec2contactform">
-                        <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
-                        <form action="">
-                            <div class="clearfix">
-                                <input class="col2 first" type="text" placeholder="FirstName">
-                                <input class="col2 last" type="text" placeholder="LastName">
-                            </div>
-                            <div class="clearfix">
-                                <input class="col2 first" type="Email" placeholder="Email">
-                                <input class="col2 last" type="text" placeholder="Contact Number">
-                            </div>
-                            <div class="clearfix">
-                                <textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
-                            </div>
-                            <a href="" class="butt-learn button button-accent">Submit</a>
-                        </form>
-                    </div>
+                        <div class="form-row">
+                            <label for="lName">Last Name*:</label>
+                            <input type="text" id="lName" name="lName" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="mail">E-mail*:</label>
+                            <input type="email" id="mail" name="user_mail" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <hr>
 
-                </div>
-            </section>
+                        <h4>Tell us how we can help</h4>
+                        <div class="form-row">
+                            <label for="msg">Message*:</label>
+                            <textarea id="msg" name="user_message" required></textarea>
+                        </div>
+                        <div class="button-group">
+							<a href="" class="butt-learn button button-accent">Send Message</a>
+						</div>
+                    </div>
+                    <!-- End col-right-->
+
+            </form>
+      
 
         </div>
     </div>
@@ -82,21 +106,14 @@
 
         </ul>
 
-        <ul class="footer-social">
-            <li>
-                <li>
-                    <a class="social-link" href=""><img class="social-icon" src="images/fb-icon.png"></a>
-                </li>
-                <li>
-                    <a class="social-link" href=""><img class="social-icon" src="images/fb-icon.png"></a>
-                </li>
-                <li>
-                    <a href=""><img src=""></a>
-                </li>
-            </li>
+        <ul class="footer-nav">
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Message</a></li>
         </ul>
-
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
