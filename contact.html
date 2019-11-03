@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/contact_styles.css">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Barriecito|Quicksand&display=swap" rel="stylesheet">
+    <script src="js/validation.js" defer></script>
 </head>
 
 <body>
@@ -52,47 +53,49 @@
         <header>
             <h2 class="text-primary margin-tb">Get in touch</h2>
         </header>
-       
 
-            <form action="" method="post">
 
-                <div class="field-container">
-                    <!-- End col-left -->
-                    <div class="col-right">
+        <form id="contact-form" action="" method="post">
 
-                        <p>Required fields are followed by *.</p>
+            <div class="field-container">
+                <!-- End col-left -->
+                <div class="col-right">
 
-                        <div class="form-row">
-                            <label for="fName">First Name* :</label>
-                            <input type="text" id="fName" name="fName" required>
-                        </div>
-                        <div class="form-row">
-                            <label for="lName">Last Name*:</label>
-                            <input type="text" id="lName" name="lName" required>
-                        </div>
-                        <div class="form-row">
-                            <label for="mail">E-mail*:</label>
-                            <input type="email" id="mail" name="user_mail" required>
-                        </div>
-                        <div class="form-row">
-                            <label for="phone">Phone:</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <hr>
+                    <p>Required fields are followed by *.</p>
 
-                        <h4>Tell us how we can help</h4>
-                        <div class="form-row">
-                            <label for="msg">Message*:</label>
-                            <textarea id="msg" name="user_message" required></textarea>
-                        </div>
-                        <div class="button-group">
-							<a href="" class="butt-learn button button-accent">Send Message</a>
-						</div>
+                    <div class="form-row">
+                        <label for="fName">First Name* :</label>
+                        <input type="text" id="fName" name="fName">
                     </div>
-                    <!-- End col-right-->
+                    <div class="form-row">
+                        <label for="lName">Last Name*:</label>
+                        <input type="text" id="lName" name="lName">
+                    </div>
+                    <div class="form-row">
+                        <label for="mail">E-mail*:</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" pattern="^[0-9]*$">
+                    </div>
+                    <hr>
 
-            </form>
-      
+                    <h4>Tell us how we can help</h4>
+                    <div class="form-row">
+                        <label for="msg">Message*:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </div>
+                    <div id="error"></div>
+                    <div id="success"></div>
+                    <div class="button-group">
+                        <button class="button-accent" type="submit">Send Message</button>
+                    </div>
+                </div>
+                <!-- End col-right-->
+
+        </form>
+
 
         </div>
     </div>

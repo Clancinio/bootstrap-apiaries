@@ -9,7 +9,3 @@ function closeSideMenu() {
     document.getElementById("side-menu").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
 }
-
-// Last Modified JS
-var lastModified = document.lastModified;
-document.getElementById("modified").innerHTML = lastModified;

@@ -7,10 +7,11 @@
 }
 
 h2 {
-	margin-top: 60px;
+    margin-top: 60px;
 }
+
 h4 {
-	margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 input:focus,
@@ -21,44 +22,65 @@ select:focus {
 }
 
 form {
-	padding: 1.5rem;
-	text-align: left;
-		max-width: 550px;
-	margin: 0 auto;
+    padding: 1.5rem;
+    text-align: left;
+    max-width: 550px;
+    margin: 0 auto;
 }
-.form-row {
-	display: flex;
-	flex-direction: column;
 
+.form-row {
+    display: flex;
+    flex-direction: column;
 }
 
 label {
-	font-weight: bold;
-	margin-bottom: 5px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 input,
-textarea { 
-	margin-bottom: 15px;
-	border: 1.5px lightgray solid;
-	padding: 10px;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 0.75rem;
+textarea {
+    margin-bottom: 15px;
+    border: 1.5px lightgray solid;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.75rem;
 }
 
 input:focus,
-textarea:focus { 
-	border: 1.5px gray solid;
+textarea:focus {
+    border: 1.5px gray solid;
 }
 
 textarea {
-	height: 100px;
+    height: 100px;
 }
 
 .button-group {
-	justify-content: start;
-}
-.button {
-	text-align: center;
+    justify-content: start;
 }
 
+.button {
+    text-align: center;
+}
+
+
+/***** Inline validation *****/
+
+input#fName:focus:valid,
+input#lName:focus:valid,
+input#mail:focus:valid,
+input#phone:focus:valid {
+    background: rgb(220, 255, 220);
+}
+
+input#fName:focus:invalid,
+input#lName:focus:invalid,
+input#mail:focus:invalid,
+input#phone:focus:invalid {
+    background: rgb(255, 232, 233);
+}
+
+#error {
+    color: red;
+}
