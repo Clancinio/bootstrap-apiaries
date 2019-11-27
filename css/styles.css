@@ -1,3 +1,4 @@
+    /* 2.4.2.a - Use CSS3 to format the appearance of paragraphs, lists, headers, background images, tables, forms. */
     /**** BASE STYLES *****/
     
     html {
@@ -63,6 +64,7 @@
     p {
         margin-bottom: 0.85rem;
     }
+    /**** 2.4.2.d - Use of dynamic pseudo-classes to highlight hyperlinks states of link, visited, active, hover; focus and two structural pseudo-classes: first-of-type and last-of-type. **/
     
     p:last-child {
         margin-bottom: 0;
@@ -78,8 +80,11 @@
     }
     
     .text-primary {
-        color: #027F90;
+        /**** 2.4.2.c - Link - Use of CSS3 styles for color (RGBA & HSLA). **/
+        color: #fed03d;
+        text-shadow: 2px 2px 3px black;
     }
+    /**** 2.4.2.g - Define document content with the class and id properties and create styles for them. *******/
     
     .logo {
         font-family: 'Barriecito', cursive;
@@ -88,6 +93,7 @@
         padding: 2rem 0;
     }
     /* Buttons */
+    /****** 2.4.2.h - <a href="index.html">Home</a> - Use cascading styles to control page layout by using either grid, flex, float, positioning.******/
     
     .button-group {
         display: flex;
@@ -116,37 +122,29 @@
         margin: 0.5rem 0;
     }
     
-    .button-primary {
-        background-color: #00B41F;
-    }
-    
-    .button-primary:hover,
-    .button-primary:focus {
-        background-color: #007014;
-    }
-    
     .button-accent {
-        background-color: #EBA100;
+        background-color: #344FA1;
     }
+    /**** 2.4.2.d - Use of dynamic pseudo-classes to highlight hyperlinks states of link, visited, active, hover; focus and two structural pseudo-classes: first-of-type and last-of-type. **/
     
     .button-accent:hover,
     .button-accent:focus {
-        background-color: #BE8200;
+        background-color: #4E67B1;
     }
     /* Navigation */
     
     nav {
-        background-color: #027F90;
+        /**** 2.4.2.c - Link - Use of CSS3 styles for color (RGBA & HSLA). **/
+        background-color: hsl(46, 99%, 62%);
         padding: 0.75rem 0;
         text-align: right;
         display: flex;
         align-content: center;
         box-shadow: black 3px 0px 5px;
-        ;
     }
     
     .nav-warapper {
-        max-width: 30rem;
+        max-width: 20rem;
     }
     
     h1 {
@@ -154,6 +152,11 @@
         color: white;
         font-family: 'Barriecito', cursive;
         letter-spacing: 3px;
+    }
+    
+    a.home_link:hover {
+        text-decoration: none;
+        color: black;
     }
     
     nav ul {
@@ -172,18 +175,28 @@
     nav a {
         display: inline-block;
         padding: 0.5rem;
-        color: white;
+        color: black;
         text-decoration: none;
+        /****** 2.4.5.b - Use of transitions and animations ******/
+        transition: font-size 0.5s ease-in-out;
     }
     
-    nav a:hover,
-    nav a:focus {
-        color: white;
-        text-decoration: underline;
+    nav li a:hover,
+    nav li a:focus {
+        font-size: 1.2rem;
+    }
+    
+    nav li {
+        display: flex;
+        align-items: center;
     }
     
     #burger {
         margin-right: 1.5rem;
+    }
+    
+    #burger svg path {
+        color: black;
     }
     
     .side-nav {
@@ -193,7 +206,7 @@
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #027F90;
+        background-color: #fed03d;
         opacity: 0.9;
         overflow-x: hidden;
         padding-top: 60px;
@@ -204,7 +217,7 @@
         padding: 10px 10px 10px 30px;
         text-decoration: none;
         font-size: 1.5rem;
-        color: white;
+        color: black;
         display: block;
         transition: 0.3s;
     }
@@ -224,7 +237,7 @@
     
     .hero {
         background-color: #333;
-        background-image: url(../images/main_image.jpg);
+        background-image: url(../images/bees.jpg);
         background-blend-mode: overlay;
         background-repeat: no-repeat;
         background-size: cover;
@@ -238,15 +251,17 @@
     }
     
     .about-us {
-        background: #027F90;
+        background: #fed03d;
+        /****** 2.4.2.h - Use cascading styles to control page layout by using either grid, flex, float, positioning.******/
         display: flex;
         flex-direction: column;
-        color: white;
+        color: black;
         padding: 0;
     }
     
     .about-us-intro {
-        background-color: #027F90;
+        /*** 2.4.2.e - Use of CSS3 background styles (background size, background-clip, background-origin, padding, margins, borders, use of an appropriate border style, use of rounded corners. ***/
+        background-color: #fed03d;
         background-image: url(../images/about_image.jpg);
         background-blend-mode: overlay;
         background-repeat: no-repeat;
@@ -258,8 +273,40 @@
         padding: 1rem 1rem 3rem;
     }
     
+    .about-us-body p:first-of-type::first-letter {
+        /***2.4.2.f - Link - Your home page should have a drop cap created with CSS3. ***/
+        float: left;
+        font-size: 75px;
+        line-height: 60px;
+        padding-top: 5px;
+        padding-right: 8px;
+        padding-left: 3px;
+    }
+    
     .order-online {
         background-color: #f3f3f3;
+    }
+    /*** TABLE *******/
+    
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 30px 0;
+    }
+    
+    th {
+        font-weight: bold;
+    }
+    
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #dddddd;
     }
     
     .products {
@@ -270,11 +317,17 @@
     }
     
     .product {
-        /* background-color: #f0f0f0; */
+        /*** 2.4.2.e - Use of CSS3 background styles (background size, background-clip, background-origin, padding, margins, borders, use of an appropriate border style, use of rounded corners. ***/
         padding: 1rem;
         border-radius: 0.35rem;
+        /***** 2.4.2.i - Use of CSS3 text and box shadows.*****/
         box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
         margin-bottom: .75rem;
+    }
+    /*** 2.4.2.k - Use of CSS3 opacity applied to two images to appear semi-transparent. *****/
+    
+    .product img {
+        opacity: 0.5;
     }
     
     .product h3 {
@@ -285,18 +338,35 @@
         padding-top: 0.75rem;
     }
     
+    .product-price {
+        margin-top: 10px;
+    }
+    
+    .product-price span {
+        font-size: 0.8rem;
+        margin-right: 10px;
+        color: hsl(46, 99%, 62%);
+    }
+    /**** 2.4.2.d - Use of dynamic pseudo-classes to highlight hyperlinks states of link, visited, active, hover; focus and two structural pseudo-classes: first-of-type and last-of-type. **/
+    
     .product:last-of-type {
         margin-bottom: 2rem;
     }
     /***** FOOTER ******/
     
     footer {
-        background: #014F59;
+        background: #fed03d;
         padding: 3rem 1rem;
-        color: white;
+        color: black;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         margin-top: 0;
+    }
+    
+    .links-container {
+        display: flex;
+        justify-content: center;
     }
     
     .footer-nav {
@@ -334,6 +404,17 @@
         display: inline-block;
         margin-bottom: 5px;
     }
+    
+    footer hr {
+        border: none;
+        border-top: 1px solid black;
+        width: 85%;
+    }
+    
+    footer p:first-of-type {
+        margin-top: 30px;
+    }
+    /*****2.4.7.a - Your web site design should include responsive design implementation using concepts covered in this course that would accommodate desktop, tablet and mobile designs.****/
     /***** Media Queries ******/
     
     @media only screen and (min-width: 750px) {
@@ -378,12 +459,14 @@
             flex-direction: row;
             max-width: 1000px;
         }
+        /***** 2.4.2.b - Use CSS3 contextual selectors (e1, e2, e3; e f; e > f; e + f) and at least two attribute selectors *******/
         .product-showcase>p {
             margin-top: 1.5rem;
         }
         .product:last-of-type {
             margin-bottom: 0.75rem;
         }
+        /***** 2.4.2.b - Use CSS3 contextual selectors (e1, e2, e3; e f; e > f; e + f) and at least two attribute selectors *******/
         .product+.product {
             margin-left: 1rem;
         }

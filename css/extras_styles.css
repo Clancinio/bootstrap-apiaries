@@ -1,3 +1,5 @@
+/* 2.4.2.a - Use CSS3 to format the appearance of paragraphs, lists, headers, background images, tables, forms. */
+
 video {
     width: 100%;
     max-width: 550px;
@@ -5,4 +7,51 @@ video {
 
 section {
     margin-top: 0;
+    padding-top: 0;
+}
+
+h2 {
+    margin-top: 60px;
+}
+
+h3 {
+    padding-top: 50px;
+}
+
+
+/***** 2.4.5.b - Use of transitions and animations *******/
+
+#countdown-clock {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.video-section,
+.rotate-section {
+    background-color: #fed03d;
+}
+
+.rotate-section img {
+    width: 30%;
+    margin: 0 auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/*****  2.4.2.j - Use of CSS3 transform rotate feature. *****/
+
+.rotate-section img:hover {
+    cursor: pointer;
+    transform: rotate(180deg);
 }

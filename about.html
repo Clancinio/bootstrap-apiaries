@@ -26,21 +26,23 @@
                                     </svg>
                         </a>
                     </span>
-            <h1>Bootstrap Apiaries</h1>
+            <h1><a class="home_link" href="index.html">Bootstrap Apiaries</a></h1>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li> <a href="#">About</a></li>
+                <li><a href="#">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="products.html">Products</a></li>
+                <li><a href="extras.html">Extras</a></li>
             </ul>
         </nav>
 
         <div id="side-menu" class="side-nav">
             <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
             <a href="products.html">Products</a>
+            <a href="extras.html">Extras</a>
         </div>
     </header>
     <!-- end header -->
@@ -49,48 +51,84 @@
             <header>
                 <h2 class="text-primary" class="section-title">About Us</h2>
             </header>
+
             <div class="about-container">
-                <div class="about-left">
-                    <h3>The Owner</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet euismod nulla, at rhoncus ligula volutpat vitae. Vestibulum et leo quis leo auctor posuere et vitae tortor. Aliquam erat volutpat. Duis interdum magna justo, ut tincidunt ex semper
-                        viverra. </p>
-                    <p>Morbi dignissim lectus luctus, venenatis sapien eu, pharetra purus. Ut venenatis pulvinar dolor a dapibus. Mauris suscipit erat sit amet iaculis luctus. Proin quam dui, posuere id auctor id, cursus non nibh. Nam vulputate massa ut
-                        bibendum malesuada. Proin id nunc sollicitudin, fringilla diam in, aliquam risus. Ut a ultrices velit. Morbi venenatis libero tellus, nec iaculis ipsum sodales non. Pellentesque in facilisis neque. Duis vehicula sodales arcu nec
-                        tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque euismod, justo at euismod laoreet, dui turpis eleifend felis, et consectetur sem nisl in turpis. Proin non ipsum
-                        sed leo rhoncus consectetur eu in sem. Integer porta lacinia consectetur. Cras auctor odio eu quam feugiat, in feugiat mauris faucibus.</p>
+                <div class="img-container">
+                    <!--******** 2.4.1.b - Link - Inline images both static and clickable. ****** -->
+                    <img src="images/bee_pic.jpg" alt="bee">
+                    <img src="images/honey_jars.jpg" alt="honey jars">
                 </div>
+                <p>
+                    Bootstrap Apiaries was founded by Leroy in 2014. Leroy is interested in sustainability of ecosystems and the economy. His education background is in plant and insect ecology with related interests in evolution and system dynamics. He has been interested
+                    in social insects since childhood and almost started keeping bees at 13 until a neighbor complained about the impending apiary setup. When he was in school, the beekeeping industry was just starting to deal with fallout of the accidental
+                    varroa mite introduction from Asia, resulting in staggering losses and requiring chemical treatment for bee colonies. At the time, it seemed that it would take many many years before resistant traits would be identified and established.
+                    With time there have been more and more reports of pockets of bees surviving, even thriving without chemical intervention. So Leroy decided to experiment by buying a colony, then splitting it using queens with some resistant traits.
+                    Over time he has expanded his apiary by starting new colonies from those that survive without treatment, using natural selection as a base for selection. Now he has enough colonies to provide a dependable supply of honey that funds
+                    the project of raising pest and pathogen resistant bees.</p>
+                <p>“Bootstrap” was chosen as a name as Leroy has built everything from scratch, recycling waste wood and starting new colonies. It is a model that while inherent in natural systems (no such thing as unemployment in these), but is getting
+                    increasingly scarce in modern economic systems. Natural systems have profound capabilities of reorganization and adaptation in the face of challenges. Leroy hopes to tap into these capabilities and model how perhaps we can work with
+                    nature rather than trying to impose artificial structures on it. Perhaps we can apply some of these principles to unlock human potential, rather than impeding it.</p>
+                <h3>The Science</h3>
+                <p>
+                    Much of science in the beekeeping industry is focused on keeping bees alive in the short term using chemical interventions. Without these, most managed bee populations will collapse. There are small pockets of bees in nature that survive and thrive. An
+                    example of this is is a population of bees in the Arnot Forest in New York state. These bees have been studied extensively by Dr. Tom Seeley both before and after the introduction of varroa mites to North America. With the arrival
+                    of mites, this population of bees crashed, but within a few years built back up to pre introduction levels.</p>
+                <p>
+                    Yet if you take these bees and put them in a managed apiary, they fail. There are clearly other factors at play.
+                </p>
+                <img src="images/apiary.jpg" alt="apiary">
+                <p>Here are some guiding principles so far. Subject to change as we learn.</p>
+
+                <ol>
+                    <li>Natural Selection is allowed to occur. A traditional approach to breeding is to try to predict what traits are important, then encorporate these traits in the local population. By using natural selection as the base for selection,
+                        we acknowledge we don't necessarily know enough to make guesses about what is important. We can sample during this process and attempt to understand what is going on.</li>
+                    <li>We assume that pests and pathogens are variable from region to region, The current knowledge of pathogen variablity is very limited. For instance we now understand that there may be 6 geographical variants of European Foul Brood in
+                        England. It seems naive that this variability is not present in other pathogens. It seems plausible that adaptation of bees is to local pathogens and that this resistance will break down if exposed to new variants. Our response
+                        to this is restrict the movement of bees especially outside our local region, to reduce exposure to new pathogens. We also encourage local production of bees and avoid bringing large numbers of bees from outside the region. The
+                        risk is probably proportional to distance. There are large risks associated with moving bees across the continent and from other continents. Moving bees has resulted in the globalized distribution of pests and pathogens that used
+                        to be regional. We can ask bees to adapt, but its not fair to ask them to adapt to pathogen chaos.</li>
+                    <li>There is also risk in disease spreading locally. We hope to identify the most important factors that reduce the spread of disease locally from hive to hive</li>
+                    <li>Bees should be in healthy environments. That mostly means staying away from industrial agriculture, and promoting elimination of sprays within the region.</li>
+                    <li>We want to contribute what we learn to the broader community. We have contributed to a national survey in 2016 that attempted to identify key characteristics in bee resistance. My bees are part of a population genetic study at UBC.
+                        Because this population of bees is not treated, it is a high information system with much that can be learned. With time we are adding sampling protocols that will add to our knowledge of bees.</li>
+                </ol>
                 <div class="about-left">
-                    <h3>Why our honey is special</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet euismod nulla, at rhoncus ligula volutpat vitae. Vestibulum et leo quis leo auctor posuere et vitae tortor. Aliquam erat volutpat. Duis interdum magna justo, ut tincidunt ex semper
-                        viverra. </p>
-                    <p>Morbi dignissim lectus luctus, venenatis sapien eu, pharetra purus. Ut venenatis pulvinar dolor a dapibus. Mauris suscipit erat sit amet iaculis luctus. Proin quam dui, posuere id auctor id, cursus non nibh. Nam vulputate massa ut
-                        bibendum malesuada. Proin id nunc sollicitudin, fringilla diam in, aliquam risus. Ut a ultrices velit. Morbi venenatis libero tellus, nec iaculis ipsum sodales non. Pellentesque in facilisis neque. Duis vehicula sodales arcu nec
-                        tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque euismod, justo at euismod laoreet, dui turpis eleifend felis, et consectetur sem nisl in turpis. Proin non ipsum
-                        sed leo rhoncus consectetur eu in sem. Integer porta lacinia consectetur. Cras auctor odio eu quam feugiat, in feugiat mauris faucibus.</p>
+
+                </div>
+                <div class="about-right">
+
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <ul class="footer-nav">
+        <hr>
+        <div class="links-container">
+            <ul class="footer-nav">
 
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Connect</a></li>
-            <li><a href="">Products</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li></li>
 
-        </ul>
 
-        <ul class="footer-nav">
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Twitter</a></li>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Message</a></li>
-        </ul>
 
+            </ul>
+
+            <ul class="footer-nav">
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Message</a></li>
+            </ul>
+        </div>
+        <hr>
+        <p>This webpage was last updated on: 11-4-2019</p>
+        <!-- *** 2.4.1.c - Use of appropriate special characters. - Copyright in footer *** --->
+        <p>&copy; 2019 Dean Clancy</p>
+        <p><a href="cross_ref/cross_ref.html">Cross Reference</a></p>
     </footer>
     <script src="js/script.js"></script>
 </body>

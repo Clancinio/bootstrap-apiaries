@@ -1,3 +1,4 @@
+/**** 2.4.6.c - Validating form input by using appropriate JavaScript functions. ****/
 const fName = document.getElementById("fName");
 const lName = document.getElementById("lName");
 const mail = document.getElementById("mail");
@@ -7,6 +8,7 @@ const form = document.getElementById("contact-form");
 const errorElement = document.getElementById("error");
 const successElement = document.getElementById("success");
 
+/****2.4.6.e - Use of BOM/DOM in emulating events through the use of event handlers. ********/
 form.addEventListener("submit", (e) => {
     let messages = [];
 
@@ -30,6 +32,7 @@ form.addEventListener("submit", (e) => {
         e.preventDefault();
         errorElement.innerText = messages.join(" \n ");
     } else {
+        /********* 2.4.6.d - Use of JavaScript alerts for validation purposes. ********/
         alert("Thank you. Your message has been sent. We will get back to you as soon as possible.");
     }
 

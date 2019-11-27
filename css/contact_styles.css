@@ -1,3 +1,8 @@
+/**** 2.4.2.a - Use CSS3 to format the appearance of paragraphs, lists, headers, background images, tables, forms. */
+
+
+/*****2.4.3.b - Apply appropriate styles to Web Forms. ********/
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -52,20 +57,29 @@ textarea:focus {
     border: 1.5px gray solid;
 }
 
-textarea {
+
+/******** 2.4.2.b - Use CSS3 contextual selectors (e1, e2, e3; e f; e > f; e + f) and at least two attribute selectors, excluding class and id attribute selectors. *****/
+
+textarea[name="user_message"] {
     height: 100px;
+}
+
+
+/******** 2.4.2.b - Use CSS3 contextual selectors (e1, e2, e3; e f; e > f; e + f) and at least two attribute selectors, excluding class and id attribute selectors. *****/
+
+div[id="error"] {
+    color: red;
 }
 
 .button-group {
     justify-content: start;
 }
 
-.button {
-    text-align: center;
-}
-
 
 /***** Inline validation *****/
+
+
+/*****2.4.3.c - Apply inline form validation by using the focus pseudo-class to appropriate form elements. *********/
 
 input#fName:focus:valid,
 input#lName:focus:valid,
@@ -79,8 +93,4 @@ input#lName:focus:invalid,
 input#mail:focus:invalid,
 input#phone:focus:invalid {
     background: rgb(255, 232, 233);
-}
-
-#error {
-    color: red;
 }
